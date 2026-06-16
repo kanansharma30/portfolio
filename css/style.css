@@ -369,16 +369,20 @@ footer {
 
         flex-direction: column;
 
-        gap: 15px;
+        gap: 20px;
     }
 
     .nav-links {
 
-        flex-direction: column;
+        display: flex;
 
-        align-items: center;
+        flex-direction: row;
 
-        gap: 15px;
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 18px;
     }
 
     .hero {
