@@ -367,9 +367,20 @@ footer {
 
     .navbar {
 
-        flex-direction: column;
+        display: flex;
 
-        gap: 20px;
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 15px 5%;
+    }
+
+    .logo {
+
+        font-size: 1.5rem;
     }
 
     .nav-links {
@@ -378,11 +389,14 @@ footer {
 
         flex-direction: row;
 
-        flex-wrap: wrap;
+        gap: 12px;
 
-        justify-content: center;
+        list-style: none;
+    }
 
-        gap: 18px;
+    .nav-links a {
+
+        font-size: 0.9rem;
     }
 
     .hero {
@@ -396,12 +410,12 @@ footer {
 
     .hero-text h2 {
 
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     .hero-text h3 {
 
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .hero-text p {
@@ -413,7 +427,7 @@ footer {
 
     .hero-image img {
 
-        max-width: 300px;
+        max-width: 280px;
     }
 
     section h2 {
