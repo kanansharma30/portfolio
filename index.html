@@ -7,21 +7,26 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Personal Developer Portfolio</title>
+    <title>Kanan Sharma | Developer Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- NAVBAR -->
 
     <header>
 
         <nav class="navbar">
 
-            <h1 class="logo">My Portfolio</h1>
+            <h1 class="logo">DevPortfolio</h1>
 
             <ul class="nav-links">
 
@@ -37,32 +42,84 @@
 
             </ul>
 
+            <button id="theme-toggle">
+
+                <i class="fas fa-moon"></i>
+
+            </button>
+
         </nav>
 
     </header>
 
-    <!-- MAIN -->
+    <!-- HERO SECTION -->
 
     <main>
 
-        <!-- HERO SECTION -->
-
-        <section id="home" class="hero">
+        <section id="home" class="hero reveal">
 
             <div class="hero-text">
 
-                <h2>Hi, I'm Kanan</h2>
-
-                <h3>Frontend Developer</h3>
-
-                <p>
-                    I create responsive and accessible websites
-                    using HTML, CSS, and JavaScript.
+                <p class="hero-tag">
+                    Hello, I'm
                 </p>
 
-                <a href="#projects" class="btn">
-                    View My Work
-                </a>
+                <h2>Kanan Sharma</h2>
+
+                <h3>
+
+    <span class="typing-text">
+        Developer
+    </span>
+
+</h3>
+
+                <p class="hero-description">
+
+                    Developer passionate about building
+                    responsive and accessible digital experiences.
+                    Always open to learning new technologies
+                    and improving creative problem-solving skills.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+
+                        View Projects
+
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+
+                        Contact Me
+
+                    </a>
+
+                </div>
+
+                <div class="social-icons">
+
+                    <a href="#">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="fas fa-envelope"></i>
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -70,7 +127,7 @@
 
                 <img
                     src="images/developer-illustration.png"
-                    alt="Developer working on laptop illustration"
+                    alt="Developer illustration"
                 >
 
             </div>
@@ -79,37 +136,77 @@
 
         <!-- ABOUT -->
 
-        <section id="about">
+        <section id="about" class="reveal">
 
             <h2>About Me</h2>
 
-            <p>
-                I am passionate about front-end web development,
-                responsive design, accessibility, and creating
-                user-friendly websites.
+            <p class="section-text">
+
+                I enjoy creating modern and responsive web experiences
+                using clean design principles and accessible development
+                practices. I am continuously learning new technologies
+                and improving my development skills through projects
+                and experimentation.
+
             </p>
 
         </section>
 
         <!-- SKILLS -->
 
-        <section id="skills">
+        <section id="skills" class="reveal">
 
             <h2>Skills</h2>
 
             <div class="skills-container">
 
-                <div class="skill-card">HTML5</div>
+                <div class="skill-card">
 
-                <div class="skill-card">CSS3</div>
+                    <i class="fab fa-html5"></i>
 
-                <div class="skill-card">JavaScript</div>
+                    <h3>HTML5</h3>
 
-                <div class="skill-card">Responsive Design</div>
+                </div>
 
-                <div class="skill-card">Accessibility</div>
+                <div class="skill-card">
 
-                <div class="skill-card">GitHub</div>
+                    <i class="fab fa-css3-alt"></i>
+
+                    <h3>CSS3</h3>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <i class="fab fa-js"></i>
+
+                    <h3>JavaScript</h3>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <i class="fas fa-mobile-alt"></i>
+
+                    <h3>Responsive Design</h3>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <i class="fas fa-universal-access"></i>
+
+                    <h3>Accessibility</h3>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <i class="fab fa-github"></i>
+
+                    <h3>GitHub</h3>
+
+                </div>
 
             </div>
 
@@ -117,7 +214,7 @@
 
         <!-- PROJECTS -->
 
-        <section id="projects">
+        <section id="projects" class="reveal">
 
             <h2>Projects</h2>
 
@@ -141,7 +238,20 @@
                             CSS Grid and media queries.
                         </p>
 
-                        <span>HTML • CSS</span>
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#">Live Demo</a>
+
+                            <a href="#">GitHub</a>
+
+                        </div>
 
                     </div>
 
@@ -165,7 +275,21 @@
                             JavaScript interactions.
                         </p>
 
-                        <span>HTML • CSS • JavaScript</span>
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="#">Live Demo</a>
+
+                            <a href="#">GitHub</a>
+
+                        </div>
 
                     </div>
 
@@ -189,31 +313,20 @@
                             using media queries.
                         </p>
 
-                        <span>HTML • CSS</span>
+                        <div class="project-tags">
 
-                    </div>
+                            <span>HTML</span>
+                            <span>CSS</span>
 
-                </article>
+                        </div>
 
-                <!-- PROJECT 4 -->
+                        <div class="project-links">
 
-                <article class="project-card">
+                            <a href="#">Live Demo</a>
 
-                    <img
-                        src="images/project-placeholder.jpg"
-                        alt="Mouse Hover Animation Project"
-                    >
+                            <a href="#">GitHub</a>
 
-                    <div class="project-content">
-
-                        <h3>Mouse Hover Project</h3>
-
-                        <p>
-                            Interactive hover effects and
-                            animation using CSS.
-                        </p>
-
-                        <span>HTML • CSS</span>
+                        </div>
 
                     </div>
 
@@ -225,7 +338,7 @@
 
         <!-- CONTACT -->
 
-        <section id="contact">
+        <section id="contact" class="reveal">
 
             <h2>Contact Me</h2>
 
@@ -252,7 +365,9 @@
                 ></textarea>
 
                 <button type="submit">
+
                     Send Message
+
                 </button>
 
             </form>
@@ -261,11 +376,23 @@
 
     </main>
 
+    <!-- BACK TO TOP -->
+
+    <button id="top-btn">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
     <!-- FOOTER -->
 
     <footer>
 
-        <p>&copy; 2025 My Portfolio</p>
+        <p>
+
+            © 2026 Kanan Sharma | Developer Portfolio
+
+        </p>
 
     </footer>
 
